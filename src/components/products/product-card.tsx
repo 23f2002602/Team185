@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import type { Product } from "@/types";
@@ -11,7 +12,7 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps) {
   return (
-    <Card className="flex flex-col overflow-hidden shadow-lg transition-all hover:shadow-xl h-full">
+    <Card className="flex flex-col overflow-hidden shadow-lg transition-all hover:shadow-xl h-full rounded-lg">
       <CardHeader className="p-0 relative">
         <Link href={`/products/${product.id}`} aria-label={`View details for ${product.title}`}>
           <Image
@@ -32,11 +33,10 @@ export function ProductCard({ product }: ProductCardProps) {
         </CardTitle>
         <Badge variant="secondary" className="mb-2">{product.category}</Badge>
         <CardDescription className="text-2xl font-semibold text-primary">
-          ${product.price.toFixed(2)}
+          ₹{product.price.toFixed(2)}
         </CardDescription>
       </CardContent>
       <CardFooter className="p-4 pt-0">
-         {/* Placeholder for Add to Cart or other actions. For now, just a view details button */}
         <Button asChild className="w-full" variant="outline">
            <Link href={`/products/${product.id}`}>View Details</Link>
         </Button>

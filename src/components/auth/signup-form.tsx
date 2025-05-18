@@ -1,3 +1,4 @@
+
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -15,6 +16,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea"; // Added for address
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 
@@ -22,6 +24,9 @@ const formSchema = z.object({
   username: z.string().min(3, { message: "Username must be at least 3 characters." }).max(20, { message: "Username must be at most 20 characters." }),
   email: z.string().email({ message: "Invalid email address." }),
   password: z.string().min(6, { message: "Password must be at least 6 characters." }),
+  mobileNumber: z.string().regex(/^\d{10}$/, { message: "Mobile number must be 10 digits." }),
+  address: z.string().min(10, { message: "Address must be at least 10 characters." }).max(100, { message: "Address can be at most 100 characters." }),
+  pincode: z.string().regex(/^\d{6}$/, { message: "Pincode must be 6 digits." }),
 });
 
 export function SignupForm() {
@@ -32,6 +37,9 @@ export function SignupForm() {
       username: "",
       email: "",
       password: "",
+      mobileNumber: "",
+      address: "",
+      pincode: "",
     },
   });
 
@@ -40,7 +48,7 @@ export function SignupForm() {
     console.log(values);
     toast({
       title: "Signup Attempted",
-      description: "Signup functionality is not yet implemented.",
+      description: "Signup functionality is not yet implemented. Check console for values.",
     });
   }
 
@@ -87,6 +95,45 @@ export function SignupForm() {
                   <FormLabel>Password</FormLabel>
                   <FormControl>
                     <Input type="password" placeholder="••••••••" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="mobileNumber"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Mobile Number</FormLabel>
+                  <FormControl>
+                    <Input type="tel" placeholder="9876543210" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="address"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Address</FormLabel>
+                  <FormControl>
+                    <Textarea placeholder="123 Main St, Anytown" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="pincode"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Pincode</FormLabel>
+                  <FormControl>
+                    <Input placeholder="123456" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
