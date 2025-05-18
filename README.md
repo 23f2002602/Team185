@@ -57,14 +57,15 @@ Join us as we introduce EcoFinds, a platform dedicated to sustainable consumptio
 
 📸 Screenshots
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-THE dashboard of the application is 
+THE dashboard of the user is
 https://github.com/user-attachments/assets/6bfb17ea-2292-40aa-b13a-64cd05f7a38f
-the listing of the application is 
+
+The listing of the application is 
 https://github.com/user-attachments/assets/b9686589-85ef-4690-8a70-42ead1f2444c
 
-the products list is 
+The product  list 
 https://github.com/user-attachments/assets/e28bdecb-4f17-4f65-8343-155cd80355e5
-THE DEPLOYED LINK IS
 
-deployed website link
+→ THE DEPLOYED LINK IS
+Deployed website link OF LOOPMART
 https://studio--loopmart-mih5i.us-central1.hosted.app/📸 Screenshots
