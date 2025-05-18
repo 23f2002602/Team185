@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5ad46081c687b2e9e2594ee0324427195743d6c6
 export type Product = {
   id: string;
   title: string;

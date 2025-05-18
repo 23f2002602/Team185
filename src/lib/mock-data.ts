@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5ad46081c687b2e9e2594ee0324427195743d6c6
 import type { Product, ProductCategory } from "@/types";
 import { PRODUCT_CATEGORIES } from "@/types";
 
@@ -18,7 +22,11 @@ const imageHints: Record<ProductCategory, string[]> = {
   "Other": ["sports equipment", "garden tool", "pet supply"],
 };
 
+<<<<<<< HEAD
 const generateRandomPrice = () => parseFloat((Math.random() * 200 + 5).toFixed(2));
+=======
+const generateRandomPrice = () => parseFloat((Math.random() * 2000 + 500).toFixed(2)); // Adjusted for Rupee values
+>>>>>>> 5ad46081c687b2e9e2594ee0324427195743d6c6
 
 export const MOCK_PRODUCTS: Product[] = Array.from({ length: 20 }, (_, i) => {
   const category = PRODUCT_CATEGORIES[i % PRODUCT_CATEGORIES.length];
@@ -30,8 +38,15 @@ export const MOCK_PRODUCTS: Product[] = Array.from({ length: 20 }, (_, i) => {
     description: sampleDescriptions[i % sampleDescriptions.length] + ` This is item number ${i+1}. Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
     price: generateRandomPrice(),
     category: category,
+<<<<<<< HEAD
     imageUrl: `https://placehold.co/400x300.png`, // Standard placeholder
     imageHint: imageHint,
   };
 });
 
+=======
+    imageUrl: `https://placehold.co/400x300.png`, 
+    imageHint: imageHint,
+  };
+});
+>>>>>>> 5ad46081c687b2e9e2594ee0324427195743d6c6
