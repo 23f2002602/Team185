@@ -68,4 +68,5 @@ https://github.com/user-attachments/assets/e28bdecb-4f17-4f65-8343-155cd80355e5
 
 → THE DEPLOYED LINK IS
 Deployed website link OF LOOPMART
-https://studio--loopmart-mih5i.us-central1.hosted.app/📸 Screenshots
+https://studio--loopmart-mih5i.us-central1.hosted.app/
+
