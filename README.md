@@ -56,7 +56,8 @@ Authentication: Simulated with LocalStorage
 
  video coming soon (Click the above to watch our demo video.)
 
-📝 Video Description
+📝 Video 
+Description
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Join us as we introduce EcoFinds, a platform dedicated to sustainable consumption through second-hand trading. In this demo,we showcase user registration, profile customization, product listing creation, and browsing features. Experience the intuitive interface, realtime search, and responsive design that make EcoFinds a user-friendly solution for eco-conscious consumers.
 
@@ -66,13 +67,13 @@ Join us as we introduce EcoFinds, a platform dedicated to sustainable consumptio
 
 📸 Screenshots
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-🏠 Home Page
+THE dashboard of the application is 
+https://github.com/user-attachments/assets/6bfb17ea-2292-40aa-b13a-64cd05f7a38f
+the listing of the application is 
+https://github.com/user-attachments/assets/b9686589-85ef-4690-8a70-42ead1f2444c
 
-
-
-
-
-
+the products list is 
+https://github.com/user-attachments/assets/e28bdecb-4f17-4f65-8343-155cd80355e5
 
 
 🛍️ Product Listing
