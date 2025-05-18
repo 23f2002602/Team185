@@ -5,10 +5,13 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { LoopMartLogo } from '@/components/icons/logo';
 import { Button } from '@/components/ui/button';
-import { UserCircle, LogOut } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
+import { UserCircle, LogOut, ShoppingCart } from 'lucide-react';
+import { useCart } from '@/hooks/use-cart';
 
 export function SiteHeader() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const { cartCount, isCartLoaded } = useCart(); // Get cartCount and loading state
 
   // Simulate checking login state on mount (e.g., from localStorage)
   useEffect(() => {
@@ -17,22 +20,29 @@ export function SiteHeader() {
       setIsLoggedIn(true);
     }
   }, []);
-
+  
   const handleLoginSimulate = () => {
     localStorage.setItem('isLoggedInLoopMart', 'true');
     setIsLoggedIn(true);
-    // In a real app, you'd navigate to /auth/login, and upon successful login, this state would be managed by an auth provider.
   };
   
   const handleSignupSimulate = () => {
     localStorage.setItem('isLoggedInLoopMart', 'true');
     setIsLoggedIn(true); 
-    // In a real app, you'd navigate to /auth/signup, and upon successful signup and login, this state would be managed.
   }
 
   const handleLogout = () => {
     localStorage.removeItem('isLoggedInLoopMart');
+    // Potentially clear other user-specific data, like username and avatar
+    localStorage.removeItem('loopmartUsername');
+    localStorage.removeItem('loopmartAvatar');
+    // For cart, decide if it should persist or be cleared on logout.
+    // For this demo, we'll let it persist.
+    // const { clearCart } = useCart(); // If you want to clear cart on logout
+    // clearCart(); 
     setIsLoggedIn(false);
+    // Consider redirecting to home or login page after logout
+    // router.push('/'); 
   };
 
   return (
@@ -42,6 +52,17 @@ export function SiteHeader() {
           <LoopMartLogo />
         </Link>
         <nav className="flex flex-1 items-center justify-end space-x-2">
+          <Button asChild variant="ghost" className="relative">
+            <Link href="/cart">
+              <ShoppingCart className="h-5 w-5" />
+              {isCartLoaded && cartCount > 0 && (
+                <Badge variant="destructive" className="absolute -top-2 -right-2 h-5 w-5 p-0 flex items-center justify-center rounded-full text-xs">
+                  {cartCount}
+                </Badge>
+              )}
+              <span className="sr-only">View Cart</span>
+            </Link>
+          </Button>
           {isLoggedIn ? (
             <>
               <Button asChild variant="ghost">
