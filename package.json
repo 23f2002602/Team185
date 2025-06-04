@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+<<<<<<< HEAD
     "dev": "next dev --turbopack --hostname 0.0.0.0",
+=======
+    "dev": "next dev --turbopack -p 9002",
+>>>>>>> 23315374c4ecbe8458f38a8a8a1a48c3843132b6
     "genkit:dev": "genkit start -- tsx src/ai/dev.ts",
     "genkit:watch": "genkit start -- tsx --watch src/ai/dev.ts",
     "build": "next build",
@@ -41,12 +45,19 @@
     "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
     "dotenv": "^16.5.0",
+<<<<<<< HEAD
     "firebase": "^11.8.1",
     "genkit": "^1.8.0",
     "googleapis": "^140.0.1",
     "lucide-react": "^0.475.0",
     "next": "15.2.3",
     "next-themes": "^0.3.0",
+=======
+    "firebase": "^11.7.3",
+    "genkit": "^1.8.0",
+    "lucide-react": "^0.475.0",
+    "next": "15.2.3",
+>>>>>>> 23315374c4ecbe8458f38a8a8a1a48c3843132b6
     "patch-package": "^8.0.0",
     "react": "^18.3.1",
     "react-day-picker": "^8.10.1",

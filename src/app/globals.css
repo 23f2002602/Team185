@@ -1,18 +1,26 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 23315374c4ecbe8458f38a8a8a1a48c3843132b6
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
+<<<<<<< HEAD
   font-family: var(--font-body), serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-headline), sans-serif;
+=======
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+>>>>>>> 23315374c4ecbe8458f38a8a8a1a48c3843132b6
 }
 
 @layer base {
   :root {
+<<<<<<< HEAD
     --background: 210 29% 96%; /* #F0F4F8 Very light blue-gray */
     --foreground: 210 10% 20%; /* Dark gray for text */
 
@@ -101,6 +109,97 @@ h1, h2, h3, h4, h5, h6 {
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
+=======
+    --background: 220 20% 96%; /* very light cool gray */
+    --foreground: 220 15% 20%; /* dark cool gray */
+
+    --card: 0 0% 100%; /* white */
+    --card-foreground: 220 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 20%;
+
+    --primary: 221.2 83.2% 53.3%; /* shadcn blue */
+    --primary-foreground: 210 40% 98%; /* whiteish */
+
+    --secondary: 220 14% 93%; /* light gray */
+    --secondary-foreground: 220 10% 30%; /* dark text on secondary */
+
+    --muted: 220 14% 93%;
+    --muted-foreground: 220 10% 50%; /* medium gray for muted text */
+
+    --accent: 160 70% 40%; /* teal */
+    --accent-foreground: 0 0% 100%; /* white */
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 88%; /* light gray border */
+    --input: 220 13% 91%; /* input background */
+    --ring: 221.2 83.2% 53.3%; /* primary blue for rings */
+
+    --chart-1: 221.2 83.2% 53.3%; /* Primary Blue */
+    --chart-2: 160 70% 40%;   /* Accent Teal */
+    --chart-3: 43 90% 55%;    /* Yellow/Orange */
+    --chart-4: 280 70% 60%;   /* Purple */
+    --chart-5: 0 75% 65%;     /* Soft Red/Coral */
+    --radius: 0.5rem;
+
+    /* Sidebar colors for light theme */
+    --sidebar-background: 220 16% 94%;
+    --sidebar-foreground: 220 15% 20%;
+    --sidebar-primary: 221.2 83.2% 53.3%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 220 14% 88%; 
+    --sidebar-accent-foreground: 220 15% 15%;
+    --sidebar-border: 220 13% 85%;
+    --sidebar-ring: 221.2 83.2% 53.3%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%; /* very dark blue */
+    --foreground: 210 40% 98%; /* light gray text */
+
+    --card: 224 71% 6%; /* slightly lighter dark blue for cards */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%; /* very dark for popovers */
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217.2 91.2% 59.8%; /* brighter blue for dark mode */
+    --primary-foreground: 210 20% 97%; /* very light text for primary buttons */
+
+    --secondary: 220 15% 15%; /* dark gray */
+    --secondary-foreground: 210 40% 90%; /* light text on secondary */
+
+    --muted: 220 15% 15%;
+    --muted-foreground: 210 20% 65%; /* medium-light gray for muted text */
+
+    --accent: 160 65% 48%; /* slightly brighter teal for dark mode */
+    --accent-foreground: 0 0% 10%; /* dark text on accent */
+
+    --destructive: 0 62.8% 30.6%; /* Darker red for destructive in dark mode */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 15% 20%; /* dark border */
+    --input: 220 15% 18%; /* input background */
+    --ring: 217.2 91.2% 59.8%; /* primary blue for rings */
+
+    --chart-1: 217.2 91.2% 59.8%; /* Primary Blue Dark */
+    --chart-2: 160 70% 45%;   /* Accent Teal Dark */
+    --chart-3: 43 90% 60%;    /* Yellow/Orange Dark */
+    --chart-4: 280 70% 65%;   /* Purple Dark */
+    --chart-5: 0 75% 70%;     /* Soft Red/Coral Dark */
+
+    /* Sidebar colors for dark theme */
+    --sidebar-background: 222.2 80% 3.5%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 217.2 91.2% 59.8%;
+    --sidebar-primary-foreground: 210 20% 97%;
+    --sidebar-accent: 220 15% 12%;
+    --sidebar-accent-foreground: 210 40% 90%;
+    --sidebar-border: 220 15% 15%;
+>>>>>>> 23315374c4ecbe8458f38a8a8a1a48c3843132b6
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
@@ -111,6 +210,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   body {
     @apply bg-background text-foreground;
+<<<<<<< HEAD
     font-feature-settings: "rlig" 1, "calt" 1;
+=======
+>>>>>>> 23315374c4ecbe8458f38a8a8a1a48c3843132b6
   }
 }
