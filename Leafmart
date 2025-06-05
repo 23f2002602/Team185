@@ -1,0 +1,151 @@
+🌿 LeafMart – Live Bidding Marketplace for Pre-Owned Products
+
+LeafMart is a dynamic full-stack marketplace designed for buying and selling used products with a real-time bidding system and in-app messaging. Combining sustainability with modern e-commerce mechanics, LeafMart promotes conscious consumerism while offering users an engaging auction experience.
+
+ 
+
+📸 Demo & Screenshots
+
+🎥 Demo Video:
+
+Click here to watch the video (Replace with your video link)
+
+🖼 Screenshots:
+
+Home Page	Live Bidding	Product Listing	Messaging
+
+			
+
+(Add actual screenshot paths in your repo)
+
+ 
+
+🚀 Core Features
+
+🛒 Marketplace
+
+•	Post used products with image uploads, condition, and price.
+
+•	Browse categorized listings with live availability.
+
+•	Real-time filtering, keyword search, and pagination.
+
+⏰ Real-Time Bidding System
+
+•	Live auction interface with countdown timer (hour-based).
+
+•	Bid updates and highest-bid highlights in real-time.
+
+•	Auto-bid thresholds and outbid alerts.
+
+💬 In-App Messaging
+
+•	Real-time chat between buyers and sellers.
+
+•	Secured message history, typing indicators, and time stamps.
+
+🔒 Authentication & Dashboard
+
+•	Secure user registration/login with Firebase or JWT-based auth.
+
+•	Personalized dashboard for tracking listings, bids, and messages.
+
+ 
+
+🧰 Tech Stack
+
+Frontend	Backend	Database	Realtime & Storage	Extras
+
+React.js / HTML+CSS	Node.js + Express.js	MongoDB / Firebase Firestore	Firebase Realtime DB / WebSockets	Redux, Toastify, Formik
+
+ 
+
+🛠 Setup Instructions
+
+1.	Clone the repository
+
+bash
+
+Copy code
+
+git clone https://github.com/your-username/leafmart.git
+
+cd leafmart
+
+2.	Install dependencies
+
+bash
+
+Copy code
+
+npm install
+
+3.	Configure Firebase & Environment Variables
+
+o	Create a .env file using .env.example
+
+o	Add Firebase and MongoDB credentials
+
+4.	Start the development server
+
+bash
+
+Copy code
+
+npm run dev
+
+5.	Access the app
+
+o	Visit http://localhost:3000
+
+ 
+
+📦 Folder Structure
+
+php
+
+Copy code
+
+leafmart/
+
+│
+
+├── client/         # Frontend (React or HTML/CSS)
+
+├── server/         # Backend APIs (Node.js + Express)
+
+├── public/         # Static files and assets
+
+├── firebase/       # Firebase configuration and rules
+
+├── models/         # Mongoose schemas / Firestore collections
+
+└── README.md       # Project documentation
+
+ 
+
+🧠 Future Enhancements
+
+•	Add payment gateway integration (e.g., Razorpay/Stripe)
+
+•	AI-based price suggestions for listings
+
+•	Product recommendation engine
+
+•	Admin dashboard for user and content moderation
+
+ 
+
+📜 License
+
+This project is licensed under the MIT License. Feel free to use, share, and contribute.
+
+ 
+
+🤝 Contributors
+
+Built with ❤️ by:
+Team 185
+
+ 
+
