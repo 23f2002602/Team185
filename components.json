@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-{}
-=======
 {
   "$schema": "https://ui.shadcn.com/schema.json",
   "style": "default",
@@ -22,4 +19,3 @@
   },
   "iconLibrary": "lucide"
 }
->>>>>>> 23315374c4ecbe8458f38a8a8a1a48c3843132b6
